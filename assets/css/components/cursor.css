@@ -1,0 +1,121 @@
+/* ============================================================
+   Custom Cursor — Luxury morphing cursor
+   ============================================================ */
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-cursor);
+  pointer-events: none;
+}
+
+/* Dot (suit exactement la souris) */
+.cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  background: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  mix-blend-mode: difference;
+  will-change: transform;
+  transition: width 0.4s var(--ease-out),
+              height 0.4s var(--ease-out);
+}
+
+/* Ring (lag derrière) */
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255,255,255,0.75);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  mix-blend-mode: difference;
+  will-change: transform;
+  transition: width 0.5s var(--ease-out),
+              height 0.5s var(--ease-out),
+              border-color 0.4s var(--ease-out),
+              opacity 0.3s;
+}
+
+/* États du cursor */
+
+/* Hover lien/button → ring s'agrandit */
+body.cursor-hover .cursor-ring {
+  width: 60px;
+  height: 60px;
+  border-color: rgba(255,255,255,0.9);
+}
+
+body.cursor-hover .cursor-dot {
+  width: 4px;
+  height: 4px;
+}
+
+/* Hover image → affiche "Voir" */
+body.cursor-view .cursor-ring {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  border: none;
+  mix-blend-mode: difference;
+}
+
+body.cursor-view .cursor-ring::after {
+  content: 'Voir';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-beige);
+}
+
+/* Hover drag area → affiche "Drag" */
+body.cursor-drag .cursor-ring {
+  width: 70px;
+  height: 70px;
+  background: transparent;
+  border-color: var(--color-text);
+}
+
+body.cursor-drag .cursor-ring::after {
+  content: '←  →';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  letter-spacing: 0;
+  color: var(--color-text);
+}
+
+/* Click → légère compression */
+body.cursor-click .cursor-dot {
+  transform: translate(-50%, -50%) scale(0.6);
+}
+
+/* Hors fenêtre */
+body.cursor-out .cursor-dot,
+body.cursor-out .cursor-ring {
+  opacity: 0;
+}
+
+/* Touch devices — hide custom cursor entirely */
+@media (hover: none) {
+  .cursor-dot,
+  .cursor-ring { display: none; }
+}

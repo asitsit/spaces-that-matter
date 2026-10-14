@@ -1,0 +1,136 @@
+/* ============================================================
+   SPACES THAT MATTER — Animation Styles
+   Classes appliquées par GSAP / ScrollTrigger
+   ============================================================ */
+
+/* ── Initial states (avant animation) ───────────────────── */
+
+[data-reveal="fade-up"] {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+[data-reveal="fade-in"] {
+  opacity: 0;
+}
+
+[data-reveal="clip-up"] {
+  clip-path: inset(100% 0 0 0);
+}
+
+[data-reveal="clip-right"] {
+  clip-path: inset(0 100% 0 0);
+}
+
+[data-reveal="scale-in"] {
+  opacity: 0;
+  transform: scale(0.94);
+}
+
+/* Split text — wrapping GSAP auto-génère */
+.split-char,
+.split-word,
+.split-line {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.split-line > .split-inner {
+  display: block;
+  transform: translateY(110%);
+  will-change: transform;
+}
+
+/* ── Image reveal overlay ────────────────────────────────── */
+
+.img-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-reveal::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--color-bg);
+  transform-origin: left center;
+  transform: scaleX(1);
+  z-index: var(--z-raised);
+}
+
+/* ── Parallax image ──────────────────────────────────────── */
+
+.parallax-wrap {
+  overflow: hidden;
+}
+
+.parallax-img {
+  transform: scale(1.15);
+  will-change: transform;
+}
+
+/* ── Horizontal scroll (portfolio) ──────────────────────── */
+
+.h-scroll-track {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  gap: var(--space-6);
+}
+
+/* ── Counter animation ───────────────────────────────────── */
+
+.counter-num {
+  font-family: var(--font-serif);
+  font-size: var(--text-hero);
+  color: var(--color-primary);
+  line-height: 1;
+  letter-spacing: var(--tracking-tight);
+}
+
+/* ── Marquee (défilement infini) ────────────────────────── */
+
+.marquee {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-track {
+  display: inline-flex;
+  gap: var(--space-12);
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ── Page transition curtain ─────────────────────────────── */
+
+.page-curtain {
+  position: fixed;
+  inset: 0;
+  background: var(--color-bg);
+  z-index: calc(var(--z-modal) + 50);
+  transform: scaleY(0);
+  transform-origin: top center;
+  pointer-events: none;
+}
+
+/* ── Pin sections ────────────────────────────────────────── */
+
+.pin-section {
+  position: relative;
+}
+
+/* ── Fade classes post-animation ────────────────────────── */
+.is-revealed {
+  opacity: 1 !important;
+  transform: none !important;
+  clip-path: none !important;
+}

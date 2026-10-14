@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Bots IA — accès explicite pour GEO (Generative Engine Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+# Exclure assets non indexables (JS/CSS restent crawlables : nécessaires au rendu)
+Disallow: /assets/docs/
+
+# Pages légales — indexables mais pas prioritaires
+Allow: /pages/legal/
+
+Sitemap: https://spacesthatmatter.com/sitemap.xml

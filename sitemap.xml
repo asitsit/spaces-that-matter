@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Landing page -->
+  <url>
+    <loc>https://spacesthatmatter.com/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Le label (origine & mission) -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/label.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- La méthodologie (8 dimensions, process, outil) -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/methodologie.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- L'équipe -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/equipe.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog & Ressources -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/blog.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- FAQ -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/faq.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/contact.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Articles de blog -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

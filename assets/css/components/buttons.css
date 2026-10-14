@@ -1,0 +1,129 @@
+/* ============================================================
+   Buttons — Luxury CTA styles
+   ============================================================ */
+
+/* ── Base ──────────────────────────────────────────────────── */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  white-space: nowrap;
+  transition: all var(--dur-base) var(--ease-luxury);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Effet ripple au clic */
+.btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.06);
+  transform: translateX(-100%);
+  transition: transform var(--dur-base) var(--ease-luxury);
+}
+
+.btn:hover::before {
+  transform: translateX(0);
+}
+
+/* ── Primary (bleu nuit) ───────────────────────────────────── */
+
+.btn-primary {
+  background: var(--color-primary);
+  color: #FAFAF8;
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+}
+
+.btn-primary:hover {
+  background: #24406a;           /* bleu nuit éclairci */
+  transform: translateY(-1px);
+}
+
+/* ── Primary accent (jaune) ──────────────────────────────── */
+
+.btn-accent {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+}
+
+.btn-accent:hover {
+  background: #f0d05a;
+  transform: translateY(-1px);
+}
+
+/* ── Outline ───────────────────────────────────────────────── */
+
+.btn-outline {
+  border: 1.5px solid var(--color-primary);
+  color: var(--color-primary);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-full);
+}
+
+.btn-outline:hover {
+  background: var(--color-primary);
+  color: #FAFAF8;
+}
+
+/* ── Ghost (lien avec arrow) ──────────────────────────────── */
+
+.btn-ghost {
+  color: var(--color-text-muted);
+  padding: 0;
+  gap: var(--space-4);
+}
+
+.btn-ghost:hover {
+  color: var(--color-primary);
+}
+
+.btn-ghost .btn-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  transition: transform var(--dur-base) var(--ease-luxury),
+              background var(--dur-fast),
+              border-color var(--dur-fast);
+}
+
+.btn-ghost:hover .btn-arrow {
+  transform: translateX(4px);
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FAFAF8;
+}
+
+/* Arrow icon SVG */
+.btn-arrow svg {
+  width: 14px;
+  height: 14px;
+}
+
+/* ── Icon only (social, etc.) ─────────────────────────────── */
+
+.btn-icon {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-text-muted);
+  transition: border-color var(--dur-fast), color var(--dur-fast);
+}
+
+.btn-icon:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}

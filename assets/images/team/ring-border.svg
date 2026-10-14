@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" fill="none">
+  <!-- Ring extérieur légèrement décalé — effet main levée -->
+  <ellipse cx="302" cy="297" rx="278" ry="276" stroke="#1b2f4a" stroke-width="6.5" opacity="0.95"/>
+  <!-- Ring intermédiaire -->
+  <ellipse cx="298" cy="303" rx="263" ry="261" stroke="#1b2f4a" stroke-width="3.5" opacity="0.75"/>
+  <!-- Ring intérieur fin -->
+  <ellipse cx="300" cy="299" rx="249" ry="248" stroke="#1b2f4a" stroke-width="2" opacity="0.55"/>
+</svg>

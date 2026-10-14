@@ -1,0 +1,97 @@
+/* ============================================================
+   SPACES THAT MATTER — Modern CSS Reset
+   ============================================================ */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  hyphens: none;
+  -webkit-hyphens: none;
+  word-break: normal;
+  overflow-wrap: normal;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: auto; /* Lenis gère le smooth scroll */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden; /* bloque le scroll horizontal au niveau racine */
+  max-width: 100%;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  overflow-x: hidden;
+  max-width: 100%;
+  cursor: none; /* custom cursor */
+}
+
+img, video, picture, svg, canvas {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+input, button, textarea, select {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: none;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: none;
+}
+
+/* Restore pointer cursor on touch devices (no custom cursor) */
+@media (hover: none) {
+  body { cursor: auto; }
+  a, button { cursor: pointer; }
+}
+
+ul, ol {
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  font-weight: 400;
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+}
+
+p {
+  max-width: 68ch;
+}
+
+/* Sur mobile, les paragraphes ne doivent pas dépasser la largeur disponible */
+@media (max-width: 640px) {
+  p { max-width: 100%; }
+}
+
+::selection {
+  background: var(--color-beige);
+  color: var(--color-primary);
+}
+
+/* Scrollbar luxury */
+::-webkit-scrollbar { width: 2px; }
+::-webkit-scrollbar-track { background: var(--color-bg-alt); }
+::-webkit-scrollbar-thumb { background: var(--color-beige); }
