@@ -13,6 +13,21 @@
       "source": "/pages/about.html",
       "destination": "/pages/label.html",
       "permanent": true
+    },
+    {
+      "source": "/en",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/index.html",
+      "destination": "/en/",
+      "permanent": true
+    },
+    {
+      "source": "/en/pages/about.html",
+      "destination": "/en/pages/label.html",
+      "permanent": true
     }
   ],
   "headers": [

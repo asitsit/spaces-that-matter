@@ -8,6 +8,18 @@
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/"/>
   </url>
 
   <!-- Le label (origine & mission) -->
@@ -16,6 +28,18 @@
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/label.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/label.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/label.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/label.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/label.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/label.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/label.html"/>
   </url>
 
   <!-- La méthodologie (8 dimensions, process, outil) -->
@@ -24,6 +48,18 @@
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/methodologie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/methodologie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/methodologie.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/methodologie.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/methodologie.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/methodologie.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/methodologie.html"/>
   </url>
 
   <!-- L'équipe -->
@@ -32,6 +68,18 @@
     <lastmod>2026-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/equipe.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/equipe.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/equipe.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/equipe.html"/>
   </url>
 
   <!-- Blog & Ressources -->
@@ -40,6 +88,18 @@
     <lastmod>2026-04-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/blog.html</loc>
+    <lastmod>2026-04-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog.html"/>
   </url>
 
   <!-- FAQ -->
@@ -48,6 +108,18 @@
     <lastmod>2026-04-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/faq.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/faq.html</loc>
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/faq.html"/>
   </url>
 
   <!-- Contact -->
@@ -56,6 +128,18 @@
     <lastmod>2026-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/contact.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/contact.html</loc>
+    <lastmod>2026-04-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/contact.html"/>
   </url>
 
   <!-- Articles de blog -->
@@ -64,18 +148,54 @@
     <lastmod>2026-05-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/pourquoi-espace-travail-levier-performance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/blog/pourquoi-espace-travail-levier-performance.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/pourquoi-espace-travail-levier-performance.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html"/>
   </url>
   <url>
     <loc>https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/flex-office-promesse-desillusion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/blog/flex-office-promesse-desillusion.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/flex-office-promesse-desillusion.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html"/>
   </url>
   <url>
     <loc>https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html</loc>
     <lastmod>2026-05-19</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/hqe-well-breeam-vs-stm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/blog/hqe-well-breeam-vs-stm.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/hqe-well-breeam-vs-stm.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html"/>
   </url>
 
 </urlset>

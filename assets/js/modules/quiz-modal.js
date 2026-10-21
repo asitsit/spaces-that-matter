@@ -3,7 +3,7 @@
  * S'ouvre sur n'importe quelle page via le bouton nav "Quiz découverte"
  */
 
-const QUESTIONS = [
+const QUESTIONS_FR = [
   {
     q: "Combien de temps faut-il en moyenne pour retrouver sa concentration après une interruption ?",
     options: ["5 minutes", "14 minutes", "23 minutes"],
@@ -48,13 +48,131 @@ const QUESTIONS = [
   }
 ];
 
-const SCORES = [
-  { min: 0, max: 2, label: "Curieux en éveil",   desc: "Vous débutez votre exploration de la science des espaces. Saviez-vous qu'un environnement végétalisé réduit le stress de 15 % ou que 46 minutes de sommeil se jouent sur la présence d'une fenêtre ? Ces connaissances sont essentielles pour créer des lieux qui font vraiment la différence." },
+const SCORES_FR = [
+  { min: 0, max: 2, label: "Curieux en éveil",  desc: "Vous débutez votre exploration de la science des espaces. Saviez-vous qu'un environnement végétalisé réduit le stress de 15 % ou que 46 minutes de sommeil se jouent sur la présence d'une fenêtre ? Ces connaissances sont essentielles pour créer des lieux qui font vraiment la différence." },
   { min: 3, max: 3, label: "Curieux éclairé",    desc: "Vous commencez à percevoir l'impact concret des espaces sur vos équipes. Les recherches sur la propinquité, la lumière naturelle ou les pauses collectives montrent que l'environnement est un levier de performance trop souvent ignoré." },
   { min: 4, max: 4, label: "Explorateur averti", desc: "Vous avez une bonne sensibilité aux enjeux des espaces de travail. Il ne reste plus qu'à passer à la mesure scientifique pour transformer ces intuitions solides en décisions éclairées et argumentées." },
   { min: 5, max: 5, label: "Expert en devenir",  desc: "Votre connaissance est solide. Vous êtes prêt à mettre en place une évaluation structurée de vos espaces pour optimiser concrètement l'impact sur vos équipes et convaincre les décideurs." },
   { min: 6, max: 6, label: "Maître des espaces", desc: "Score parfait ! Vous maîtrisez la science des espaces de travail comme peu de personnes. Vous avez toutes les clés pour convaincre votre organisation d'investir dans des environnements véritablement performants." }
 ];
+
+const QUESTIONS_EN = [
+  {
+    q: "On average, how long does it take to regain focus after an interruption?",
+    options: ["5 minutes", "14 minutes", "23 minutes"],
+    correct: 2,
+    expl: "On average, it takes 23 minutes to fully return to a task after an interruption. In poorly managed work environments (noise, constant solicitations), this represents a major hidden cost to cognitive productivity.",
+    source: "Gloria Mark, University of California (2008)"
+  },
+  {
+    q: "Do chance encounters at the office foster innovation?",
+    options: ["True", "False"],
+    correct: 0,
+    expl: "Informal encounters foster innovation by making it easier for ideas to flow between individuals and teams. Alex Pentland's research shows that informal interactions are a key predictor of performance and innovation. Designing serendipity into spaces is an underestimated performance lever.",
+    source: "MIT Media Lab, sociometric study (Pentland, 2012)"
+  },
+  {
+    q: "What is the effect of simple physical proximity between colleagues?",
+    options: ["Reduced concentration", "Increased social affinity", "Lower productivity"],
+    correct: 1,
+    expl: "This is the propinquity effect: the closer two people share a space, the more naturally they develop social bonds and cooperation. Where teams are located is a strategic organisational lever.",
+    source: "Propinquity effect, Festinger, Schachter & Back (1950)"
+  },
+  {
+    q: "What is the impact of a green, plant-filled environment on employees?",
+    options: ["Low", "Moderate", "Significant"],
+    correct: 2,
+    expl: "Plants in the office significantly reduce stress, by up to 15% according to some meta-analyses, while improving concentration and well-being. Nature is not an “aesthetic extra”: it is a driver of neurocognitive performance.",
+    source: "Gillis & Gatersleben (2015)"
+  },
+  {
+    q: "What is the effect of a shared break on team performance?",
+    options: ["+20% performance", "-20% performance", "No effect"],
+    correct: 0,
+    expl: "Synchronised group breaks improve team performance by strengthening social interaction, information flow and cohesion. Pentland's research shows productivity gains of up to 20%. Social connection is a productive asset, not a waste of time.",
+    source: "Pentland, 2012"
+  },
+  {
+    q: "Employees working in an office without windows sleep on average…",
+    options: ["46 minutes less per night", "5 minutes less per night", "30 minutes more per night"],
+    correct: 0,
+    expl: "Exposure to natural light regulates the circadian rhythm. Without windows, employees lose up to 46 minutes of sleep per night, with direct effects on their performance and health. A space without natural light is a driver of physiological disengagement.",
+    source: "Mohamed Boubekri, 2014"
+  }
+];
+
+const SCORES_EN = [
+  { min: 0, max: 2, label: "Budding explorer",   desc: "You are just starting to explore the science of workspaces. Did you know that a green environment reduces stress by 15%, or that 46 minutes of sleep can depend on having a window? This knowledge is essential to creating places that truly make a difference." },
+  { min: 3, max: 3, label: "Informed explorer",  desc: "You are beginning to see the tangible impact of spaces on your teams. Research on propinquity, natural light and shared breaks shows that the environment is a performance lever that is too often overlooked." },
+  { min: 4, max: 4, label: "Seasoned explorer",  desc: "You have a good grasp of what is at stake in workspaces. All that remains is to move to scientific measurement, turning these sound intuitions into informed, well-argued decisions." },
+  { min: 5, max: 5, label: "Expert in the making", desc: "Your knowledge is solid. You are ready to set up a structured assessment of your spaces to concretely improve their impact on your teams and convince decision-makers." },
+  { min: 6, max: 6, label: "Master of spaces",   desc: "Perfect score! You understand the science of workspaces like few people do. You have everything you need to convince your organisation to invest in truly high-performing environments." }
+];
+
+/* ── Textes d'interface ── */
+const UI = {
+  fr: {
+    dialogAria: 'Quiz Découverte',
+    closeAria:  'Fermer le quiz',
+    title:      'Quiz Découverte',
+    subtitle:   'Testez vos connaissances sur les espaces de travail',
+    intro:      "Savez-vous vraiment ce qui se cache derrière un espace de travail performant ? Découvrez à travers ce quiz basé sur des études scientifiques l'impact réel de l'environnement sur la productivité, le bien-être et la collaboration.",
+    ready:      'Prêt à être surpris ?',
+    duration:   '⏱ Environ 2 minutes',
+    start:      'Commencer le quiz',
+    next:       'Question suivante',
+    results:    'Voir mes résultats',
+    correct:    '✓ Bonne réponse !',
+    wrong:      'Incorrect — bonne réponse :',
+    source:     'Source :',
+    closingIntro: "Les espaces de travail sont aujourd'hui l'un des leviers les plus sous-exploités de performance.",
+    closingLead:  'Un environnement de travail peut :',
+    neg:        ['Dégrader silencieusement la concentration', 'Éroder les relations sociales', "Réduire la capacité d'innovation"],
+    orLead:     'Ou au contraire :',
+    pos:        ['Amplifier la collaboration', 'Accélérer la prise de décision', "Renforcer l'engagement collectif"],
+    more:       'Et bien plus encore !',
+    emailTitle: 'Vous souhaitez en savoir plus ?',
+    emailDesc:  'Laissez-nous votre adresse e-mail — nous pourrons vous recontacter pour vous présenter notre solution ou organiser une démo.',
+    placeholder:'votre@email.com',
+    send:       'Envoyer',
+    sent:       '✓ Merci ! Nous vous recontacterons prochainement.',
+    restart:    'Recommencer le quiz',
+    subject:    'Demande de recontact — Quiz Découverte STM',
+  },
+  en: {
+    dialogAria: 'Discovery Quiz',
+    closeAria:  'Close the quiz',
+    title:      'Discovery Quiz',
+    subtitle:   'Test your knowledge of workspaces',
+    intro:      'Do you really know what lies behind a high-performing workspace? Through this quiz based on scientific studies, discover the real impact of the environment on productivity, well-being and collaboration.',
+    ready:      'Ready to be surprised?',
+    duration:   '⏱ About 2 minutes',
+    start:      'Start the quiz',
+    next:       'Next question',
+    results:    'See my results',
+    correct:    '✓ Correct!',
+    wrong:      'Incorrect — right answer:',
+    source:     'Source:',
+    closingIntro: 'Workspaces are today one of the most under-used levers of performance.',
+    closingLead:  'A work environment can:',
+    neg:        ['Silently erode concentration', 'Weaken social relationships', 'Reduce the capacity to innovate'],
+    orLead:     'Or, on the contrary:',
+    pos:        ['Amplify collaboration', 'Speed up decision-making', 'Strengthen collective engagement'],
+    more:       'And much more!',
+    emailTitle: 'Would you like to know more?',
+    emailDesc:  'Leave us your email address — we can get back to you to present our solution or arrange a demo.',
+    placeholder:'your@email.com',
+    send:       'Send',
+    sent:       '✓ Thank you! We will be in touch soon.',
+    restart:    'Restart the quiz',
+    subject:    'Callback request — STM Discovery Quiz (EN)',
+  },
+};
+
+let QUESTIONS = QUESTIONS_FR;
+let SCORES    = SCORES_FR;
+let T         = UI.fr;
+let LANG      = 'fr';
 
 /* ── État ── */
 let current = 0;
@@ -416,24 +534,16 @@ function injectStyles() {
   document.head.appendChild(style);
 }
 
-/* ── Root path helper ── */
-function getRoot() {
-  const p = window.location.pathname;
-  if (p.includes('/pages/blog/')) return '../../';
-  if (p.includes('/pages/'))      return '../';
-  return '';
-}
-
 /* ── Injection du HTML ── */
 function injectHTML() {
   if (document.getElementById('quiz-modal-overlay')) return;
-  const root = getRoot();
+  const li = items => items.map(i => `<li>${i}</li>`).join('\n            ');
 
   const el = document.createElement('div');
   el.innerHTML = `
-<div class="qm-overlay" id="quiz-modal-overlay" role="dialog" aria-modal="true" aria-label="Quiz Découverte">
+<div class="qm-overlay" id="quiz-modal-overlay" role="dialog" aria-modal="true" aria-label="${T.dialogAria}">
   <div class="qm-panel" id="quiz-modal-panel">
-    <button class="qm-close" id="qm-close" aria-label="Fermer le quiz">
+    <button class="qm-close" id="qm-close" aria-label="${T.closeAria}">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
         <path d="M1 1l12 12M13 1L1 13"/>
       </svg>
@@ -447,13 +557,13 @@ function injectHTML() {
           <path d="M16.24 7.76l-2.12 6.36-6.36 2.12 2.12-6.36 6.36-2.12z"/>
         </svg>
       </div>
-      <h2 class="qm-intro-title">Quiz Découverte</h2>
-      <p class="qm-intro-subtitle">Testez vos connaissances sur les espaces de travail</p>
-      <p class="qm-intro-desc">Savez-vous vraiment ce qui se cache derrière un espace de travail performant ? Découvrez à travers ce quiz basé sur des études scientifiques l'impact réel de l'environnement sur la productivité, le bien-être et la collaboration.</p>
-      <p class="qm-intro-desc">Prêt à être surpris ?</p>
-      <p class="qm-intro-desc" style="font-style:italic; font-size:.8rem; margin-top:.25rem;">⏱ Environ 2 minutes</p>
+      <h2 class="qm-intro-title">${T.title}</h2>
+      <p class="qm-intro-subtitle">${T.subtitle}</p>
+      <p class="qm-intro-desc">${T.intro}</p>
+      <p class="qm-intro-desc">${T.ready}</p>
+      <p class="qm-intro-desc" style="font-style:italic; font-size:.8rem; margin-top:.25rem;">${T.duration}</p>
       <button id="qm-start" class="btn btn-primary qm-start-btn">
-        Commencer le quiz
+        ${T.start}
         <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
       </button>
     </div>
@@ -469,7 +579,7 @@ function injectHTML() {
         <p class="qm-fb-expl"   id="qm-fb-expl"></p>
         <p class="qm-fb-src"    id="qm-fb-src"></p>
         <button id="qm-next" class="btn btn-primary qm-next-btn">
-          Question suivante
+          ${T.next}
           <svg width="13" height="13" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
       </div>
@@ -484,32 +594,28 @@ function injectHTML() {
           <p class="qm-score-desc"  id="qm-score-desc"></p>
         </div>
         <div class="qm-closing-text">
-          <p class="qm-closing-intro">Les espaces de travail sont aujourd'hui l'un des leviers les plus sous-exploités de performance.</p>
-          <p class="qm-closing-lead">Un environnement de travail peut :</p>
+          <p class="qm-closing-intro">${T.closingIntro}</p>
+          <p class="qm-closing-lead">${T.closingLead}</p>
           <ul class="qm-closing-list qm-closing-list--neg">
-            <li>Dégrader silencieusement la concentration</li>
-            <li>Éroder les relations sociales</li>
-            <li>Réduire la capacité d'innovation</li>
+            ${li(T.neg)}
           </ul>
-          <p class="qm-closing-lead">Ou au contraire :</p>
+          <p class="qm-closing-lead">${T.orLead}</p>
           <ul class="qm-closing-list qm-closing-list--pos">
-            <li>Amplifier la collaboration</li>
-            <li>Accélérer la prise de décision</li>
-            <li>Renforcer l'engagement collectif</li>
+            ${li(T.pos)}
           </ul>
-          <p class="qm-closing-more">Et bien plus encore !</p>
+          <p class="qm-closing-more">${T.more}</p>
         </div>
       </div>
       <div class="qm-email-block">
-        <p class="qm-cta-title">Vous souhaitez en savoir plus ?</p>
-        <p class="qm-cta-desc">Laissez-nous votre adresse e-mail — nous pourrons vous recontacter pour vous présenter notre solution ou organiser une démo.</p>
+        <p class="qm-cta-title">${T.emailTitle}</p>
+        <p class="qm-cta-desc">${T.emailDesc}</p>
         <div class="qm-email-row">
-          <input type="email" id="qm-email-input" class="qm-email-input" placeholder="votre@email.com" autocomplete="email">
-          <button id="qm-email-submit" class="btn btn-accent">Envoyer</button>
+          <input type="email" id="qm-email-input" class="qm-email-input" placeholder="${T.placeholder}" autocomplete="email">
+          <button id="qm-email-submit" class="btn btn-accent">${T.send}</button>
         </div>
-        <p class="qm-email-confirm" id="qm-email-confirm">✓ Merci ! Nous vous recontacterons prochainement.</p>
+        <p class="qm-email-confirm" id="qm-email-confirm">${T.sent}</p>
       </div>
-      <button class="qm-restart-btn" id="qm-restart">Recommencer le quiz</button>
+      <button class="qm-restart-btn" id="qm-restart">${T.restart}</button>
     </div>
   </div>
 </div>
@@ -567,17 +673,17 @@ function selectAnswer(idx) {
 
   const badge = document.getElementById('qm-fb-badge');
   badge.textContent = ok
-    ? '✓ Bonne réponse !'
-    : `✗ Incorrect — bonne réponse : ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}`;
+    ? T.correct
+    : `✗ ${T.wrong} ${String.fromCharCode(65 + q.correct)}. ${q.options[q.correct]}`;
   badge.className = `qm-fb-badge ${ok ? 'is-correct' : 'is-wrong'}`;
 
   document.getElementById('qm-fb-expl').textContent = q.expl;
-  document.getElementById('qm-fb-src').textContent  = `Source : ${q.source}`;
+  document.getElementById('qm-fb-src').textContent  = `${T.source} ${q.source}`;
 
   const btnNext = document.getElementById('qm-next');
   btnNext.childNodes[0].textContent = current + 1 >= QUESTIONS.length
-    ? 'Voir mes résultats '
-    : 'Question suivante ';
+    ? `${T.results} `
+    : `${T.next} `;
 
   document.getElementById('qm-feedback').style.display = 'flex';
   document.getElementById('qm-feedback').style.flexDirection = 'column';
@@ -617,7 +723,12 @@ function resetQuiz() {
 }
 
 /* ── Init ── */
-export function initQuizModal() {
+export function initQuizModal(lang = 'fr') {
+  LANG      = lang === 'en' ? 'en' : 'fr';
+  QUESTIONS = LANG === 'en' ? QUESTIONS_EN : QUESTIONS_FR;
+  SCORES    = LANG === 'en' ? SCORES_EN    : SCORES_FR;
+  T         = UI[LANG];
+
   injectStyles();
   injectHTML();
 
@@ -677,8 +788,9 @@ export function initQuizModal() {
         headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
         body: JSON.stringify({
           email,
-          _subject: 'Demande de recontact — Quiz Découverte STM',
+          _subject: T.subject,
           source: 'quiz_decouverte',
+          langue: LANG,
           score: document.getElementById('qm-score-num').textContent
         })
       });
@@ -687,7 +799,7 @@ export function initQuizModal() {
       confirm.classList.add('is-sent');
     } catch {
       btn.disabled = false;
-      btn.textContent = 'Envoyer';
+      btn.textContent = T.send;
     }
   });
 }

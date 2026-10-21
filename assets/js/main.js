@@ -11,7 +11,10 @@ import { initLenis }      from './modules/lenis.js';
 import { buildNav }       from './modules/nav-include.js';
 import { initQuizModal }  from './modules/quiz-modal.js';
 
-// Détermine le root path selon la profondeur de la page
+// Langue de la page : les pages anglaises vivent sous /en/ avec <html lang="en">
+const lang = document.documentElement.lang === 'en' ? 'en' : 'fr';
+
+// Détermine le root path selon la profondeur de la page (relatif à la racine de la langue)
 let root = '';
 if (window.location.pathname.includes('/pages/blog/') ||
     window.location.pathname.includes('/pages/legal/')) {
@@ -19,11 +22,13 @@ if (window.location.pathname.includes('/pages/blog/') ||
 } else if (window.location.pathname.includes('/pages/')) {
   root = '../';
 }
+// Les assets sont partagés à la racine du site : un niveau de plus depuis /en/
+const assetRoot = lang === 'en' ? `${root}../` : root;
 
 document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Inject nav
-  buildNav(root);
+  buildNav(root, assetRoot, lang);
 
   // 2. Loader, puis tout le reste
   initLoader(() => {
@@ -34,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initTracking();
     initAnchorScroll();
     setFooterYear();
-    initQuizModal();
+    initQuizModal(lang);
   });
 
 });
