@@ -75,7 +75,7 @@ const QUESTIONS_EN = [
     q: "What is the effect of simple physical proximity between colleagues?",
     options: ["Reduced concentration", "Increased social affinity", "Lower productivity"],
     correct: 1,
-    expl: "This is the propinquity effect: the closer two people share a space, the more naturally they develop social bonds and cooperation. Where teams are located is a strategic organisational lever.",
+    expl: "This is the propinquity effect: the closer two people share a space, the more naturally they develop social bonds and cooperation. Where teams are located is a strategic organizational lever.",
     source: "Propinquity effect, Festinger, Schachter & Back (1950)"
   },
   {
@@ -89,7 +89,7 @@ const QUESTIONS_EN = [
     q: "What is the effect of a shared break on team performance?",
     options: ["+20% performance", "-20% performance", "No effect"],
     correct: 0,
-    expl: "Synchronised group breaks improve team performance by strengthening social interaction, information flow and cohesion. Pentland's research shows productivity gains of up to 20%. Social connection is a productive asset, not a waste of time.",
+    expl: "Synchronized group breaks improve team performance by strengthening social interaction, information flow and cohesion. Pentland's research shows productivity gains of up to 20%. Social connection is a productive asset, not a waste of time.",
     source: "Pentland, 2012"
   },
   {
@@ -106,7 +106,7 @@ const SCORES_EN = [
   { min: 3, max: 3, label: "Informed explorer",  desc: "You are beginning to see the tangible impact of spaces on your teams. Research on propinquity, natural light and shared breaks shows that the environment is a performance lever that is too often overlooked." },
   { min: 4, max: 4, label: "Seasoned explorer",  desc: "You have a good grasp of what is at stake in workspaces. All that remains is to move to scientific measurement, turning these sound intuitions into informed, well-argued decisions." },
   { min: 5, max: 5, label: "Expert in the making", desc: "Your knowledge is solid. You are ready to set up a structured assessment of your spaces to concretely improve their impact on your teams and convince decision-makers." },
-  { min: 6, max: 6, label: "Master of spaces",   desc: "Perfect score! You understand the science of workspaces like few people do. You have everything you need to convince your organisation to invest in truly high-performing environments." }
+  { min: 6, max: 6, label: "Master of spaces",   desc: "Perfect score! You understand the science of workspaces like few people do. You have everything you need to convince your organization to invest in truly high-performing environments." }
 ];
 
 /* ── Textes d'interface ── */
