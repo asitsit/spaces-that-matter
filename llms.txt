@@ -31,6 +31,18 @@ Points clés :
 - [HQE, WELL, BREEAM vs STM](https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html): différence entre certification environnementale du bâtiment et label de performance humaine
 - [Blog & Ressources](https://spacesthatmatter.com/pages/blog.html): articles et publications scientifiques de référence
 
+## English version
+
+- [Home](https://spacesthatmatter.com/en/): the label, the 8 dimensions and the certification process
+- [The label](https://spacesthatmatter.com/en/pages/label.html): origin, genesis with La Fabrique Spinoza, mission and vision
+- [Methodology](https://spacesthatmatter.com/en/pages/methodologie.html): the 8 dimensions, the 4-step process, the measurement tool and compliance
+- [The team](https://spacesthatmatter.com/en/pages/equipe.html): founding members and their expertise
+- [FAQ](https://spacesthatmatter.com/en/pages/faq.html): the label, ROI, methodology, implementation and confidentiality
+- [Contact and demo](https://spacesthatmatter.com/en/pages/contact.html): contact form and demo booking
+- [Why the workspace is a lever for human performance](https://spacesthatmatter.com/en/pages/blog/pourquoi-espace-travail-levier-performance.html)
+- [Flex office: a promise kept or a collective disillusion?](https://spacesthatmatter.com/en/pages/blog/flex-office-promesse-desillusion.html)
+- [HQE, WELL, BREEAM vs STM](https://spacesthatmatter.com/en/pages/blog/hqe-well-breeam-vs-stm.html)
+
 ## Contact
 
 - Email : contact@spacesthatmatter.com
