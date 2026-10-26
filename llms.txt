@@ -1,0 +1,38 @@
+# Spaces That Matter
+
+> Spaces That Matter (STM) est le premier label qui mesure la performance humaine des espaces de travail. Construit avec La Fabrique Spinoza (think tank sur le bonheur au travail) à partir de plus de 200 références scientifiques, il évalue l'impact réel des bureaux sur l'engagement, le bien-être, la collaboration et la performance des collaborateurs, à travers un questionnaire rempli par les collaborateurs eux-mêmes.
+>
+> Spaces That Matter (STM) is the first label that measures the human performance of workspaces. Built with La Fabrique Spinoza on more than 200 scientific references, it assesses the real impact of offices on employee engagement, well-being, collaboration and performance, through a questionnaire completed by employees themselves.
+
+Points clés :
+
+- Référentiel en 8 dimensions : dynamique relationnelle, adaptabilité émotionnelle, narration spatiale, activation de l'engagement, hybridation fluide, ouverture à l'extérieur, gouvernance spatiale, intégration de la nature.
+- Fondements scientifiques : neurosciences, psychologie environnementale, ergonomie, sociologie des organisations, économie comportementale.
+- Processus en 4 étapes : souscription et déploiement du questionnaire (environ 15 minutes par collaborateur, 2 à 4 semaines de déploiement), scoring et analyse (score global et par dimension), débriefing optionnel avec un expert, obtention du label.
+- Validité du label : 2 ans, renouvelable.
+- Éligibilité : organisations d'au moins 50 collaborateurs, avec un taux de réponse minimum de 50 %.
+- Données anonymisées et traitées conformément au RGPD ; l'employeur n'a accès qu'aux résultats agrégés.
+- Complémentaire des certifications environnementales du bâtiment (HQE, WELL, BREEAM) : celles-ci mesurent la performance technique du bâtiment, STM mesure son impact humain.
+- Un audit exploratoire permet de se positionner sur les 8 dimensions avant de démarrer la labellisation.
+
+## Pages principales
+
+- [Accueil](https://spacesthatmatter.com/): présentation du label, des 8 dimensions et du processus de labellisation
+- [Le label](https://spacesthatmatter.com/pages/label.html): origine du label, genèse avec La Fabrique Spinoza, mission et vision
+- [La méthodologie](https://spacesthatmatter.com/pages/methodologie.html): détail des 8 dimensions, processus en 4 étapes, outil de mesure, conformité et indépendance
+- [L'équipe](https://spacesthatmatter.com/pages/equipe.html): les membres fondateurs et leurs expertises
+- [FAQ](https://spacesthatmatter.com/pages/faq.html): questions fréquentes sur le label, le ROI, la méthodologie, la mise en œuvre et la confidentialité
+- [Contact et démo](https://spacesthatmatter.com/pages/contact.html): formulaire de contact et prise de rendez-vous pour une démonstration
+
+## Articles
+
+- [Pourquoi l'espace de travail est un levier de performance humaine](https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html): mécanismes neurologiques et psychologiques (bruit, lumière, densité, nature) et limites des enquêtes de satisfaction classiques
+- [Flex-office : promesse tenue ou désillusion collective ?](https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html): ce que la recherche dit du flex-office et les leviers des entreprises qui le réussissent
+- [HQE, WELL, BREEAM vs STM](https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html): différence entre certification environnementale du bâtiment et label de performance humaine
+- [Blog & Ressources](https://spacesthatmatter.com/pages/blog.html): articles et publications scientifiques de référence
+
+## Contact
+
+- Email : contact@spacesthatmatter.com
+- Démonstration : https://cal.com/alexandre-sitbon/demo-spaces-that-matter
+- Partenaire fondateur : [La Fabrique Spinoza](https://www.fabriquespinoza.org/)
