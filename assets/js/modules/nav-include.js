@@ -69,6 +69,9 @@ export function buildNav(root = '', assetRoot = root, lang = 'fr') {
 
   const t = LABELS[lang] || LABELS.fr;
 
+  // Lien vers l'accueil sans /index.html (qui redirige vers /)
+  const home = root || './';
+
   const isLightPage = document.body.dataset.navTheme === 'light';
   const logoLight = isLightPage
     ? `${assetRoot}assets/images/logo/logo-horizontal-dark.png`
@@ -78,7 +81,7 @@ export function buildNav(root = '', assetRoot = root, lang = 'fr') {
   nav.innerHTML = `
     <nav class="nav" role="navigation" aria-label="${t.navAria}">
 
-      <a href="${root}index.html" class="nav-logo" aria-label="${t.homeAria}">
+      <a href="${home}" class="nav-logo" aria-label="${t.homeAria}">
         <img src="${logoLight}" alt="Spaces That Matter" height="44"
              class="nav-logo-img"
              data-light="${logoLight}"
@@ -102,7 +105,7 @@ export function buildNav(root = '', assetRoot = root, lang = 'fr') {
            data-track-location="navigation">
           ${t.quiz}
         </a>
-        <a href="${root}index.html#demo"
+        <a href="${home}#demo"
            class="nav-cta"
            data-track-cta="nav_demo"
            data-track-location="navigation">
@@ -120,7 +123,7 @@ ${langSwitch(lang, t)}
     <div class="nav-mobile" id="mobile-menu" role="dialog" aria-modal="true" aria-label="${t.menu}">
       <nav>
         <ul role="list" class="nav-mobile-list">
-          <li><a href="${root}index.html"              class="nav-mobile-link">${t.home}</a></li>
+          <li><a href="${home}"              class="nav-mobile-link">${t.home}</a></li>
           <li><a href="${root}pages/label.html"        class="nav-mobile-link">${t.label}</a></li>
           <li><a href="${root}pages/methodologie.html" class="nav-mobile-link">${t.methodo}</a></li>
           <li><a href="${root}pages/equipe.html"       class="nav-mobile-link">${t.team}</a></li>
@@ -129,7 +132,7 @@ ${langSwitch(lang, t)}
           <li><a href="${root}pages/faq.html"          class="nav-mobile-link">${t.faq}</a></li>
           <li><a href="${root}pages/contact.html"      class="nav-mobile-link">${t.contact}</a></li>
           <li><a href="#" data-quiz-open class="nav-mobile-link">${t.quiz}</a></li>
-          <li><a href="${root}index.html#demo"          class="nav-mobile-link nav-mobile-cta">${t.demo}</a></li>
+          <li><a href="${home}#demo"          class="nav-mobile-link nav-mobile-cta">${t.demo}</a></li>
         </ul>
       </nav>
     </div>
