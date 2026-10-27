@@ -53,6 +53,23 @@
 /* Navigation interne dans la même langue : pas d'animation (classe posée dans le <head>) */
 .no-loader .loader { display: none; }
 
+/* Mini fondu entre les pages, à la place de l'écran de chargement */
+.no-loader body { animation: pageFadeIn 0.35s var(--ease-out, ease-out) both; }
+html.is-page-leaving body {
+  opacity: 0;
+  transition: opacity 0.2s ease-in;
+}
+
+@keyframes pageFadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .no-loader body { animation: none; }
+  html.is-page-leaving body { opacity: 1; transition: none; }
+}
+
 /* Sortie du loader */
 .loader.is-done {
   pointer-events: none;

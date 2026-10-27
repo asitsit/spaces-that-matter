@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 1. Inject nav
   buildNav(root, assetRoot, lang);
+  initPageTransitions();
 
   // 2. Loader, puis tout le reste
   initLoader(() => {
@@ -67,6 +68,34 @@ function initAnchorScroll() {
         }
       }
     });
+  });
+}
+
+/* Mini fondu de sortie avant de quitter la page pour une autre page du site */
+function initPageTransitions() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+  const html = document.documentElement;
+
+  document.addEventListener('click', e => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+    const link = e.target.closest('a[href]');
+    if (!link || link.target === '_blank' || link.hasAttribute('download') || link.hasAttribute('data-quiz-open')) return;
+
+    const url = new URL(link.href, window.location.href);
+    if (url.origin !== window.location.origin) return;
+    // Ancre sur la même page : pas de transition
+    if (url.pathname === window.location.pathname && url.search === window.location.search) return;
+
+    e.preventDefault();
+    html.classList.add('is-page-leaving');
+    setTimeout(() => { window.location.href = url.href; }, 200);
+  });
+
+  // Retour arrière depuis le cache du navigateur : réafficher la page
+  window.addEventListener('pageshow', ev => {
+    if (ev.persisted) html.classList.remove('is-page-leaving');
   });
 }
 
