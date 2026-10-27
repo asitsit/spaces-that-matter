@@ -50,6 +50,9 @@
   letter-spacing: var(--tracking-wider);
 }
 
+/* Navigation interne dans la même langue : pas d'animation (classe posée dans le <head>) */
+.no-loader .loader { display: none; }
+
 /* Sortie du loader */
 .loader.is-done {
   pointer-events: none;

@@ -9,6 +9,14 @@ export function initLoader(onComplete) {
 
   if (!loader) { onComplete?.(); return; }
 
+  // Navigation interne dans la même langue : le script du <head> a posé .no-loader
+  if (document.documentElement.classList.contains('no-loader')) {
+    loader.remove();
+    document.body.classList.add('is-ready');
+    onComplete?.();
+    return;
+  }
+
   let progress = 0;
 
   const tick = setInterval(() => {

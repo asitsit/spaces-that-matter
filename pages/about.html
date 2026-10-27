@@ -4,6 +4,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0; url=label.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Animation d'ouverture : à l'arrivée sur le site ou au changement de langue, pas entre les pages -->
+  <script>
+    (function () {
+      var html = document.documentElement, lang = html.lang || 'fr', prev = null, internal = false;
+      try { internal = !!document.referrer && new URL(document.referrer).host === location.host; } catch (e) {}
+      try { prev = sessionStorage.getItem('stm-lang'); sessionStorage.setItem('stm-lang', lang); } catch (e) {}
+      if (internal && prev === lang) html.classList.add('no-loader');
+    })();
+  </script>
   <title>Notre histoire — Spaces That Matter</title>
   <meta name="description" content="Comment Spaces That Matter est né du constat que les espaces de travail manquent d'un outil pour mesurer leur impact humain. L'histoire de notre label.">
   <link rel="canonical" href="https://spacesthatmatter.com/pages/label.html">

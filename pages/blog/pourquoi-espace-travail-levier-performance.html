@@ -3,6 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Animation d'ouverture : à l'arrivée sur le site ou au changement de langue, pas entre les pages -->
+  <script>
+    (function () {
+      var html = document.documentElement, lang = html.lang || 'fr', prev = null, internal = false;
+      try { internal = !!document.referrer && new URL(document.referrer).host === location.host; } catch (e) {}
+      try { prev = sessionStorage.getItem('stm-lang'); sessionStorage.setItem('stm-lang', lang); } catch (e) {}
+      if (internal && prev === lang) html.classList.add('no-loader');
+    })();
+  </script>
   <title>L'espace de travail, levier de performance humaine | STM</title>
   <meta name="description" content="Bruit, lumière, densité, nature : comment l'espace de travail agit sur le cerveau, et pourquoi mesurer l'expérience collaborateur avant d'investir.">
   <link rel="canonical" href="https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html">
