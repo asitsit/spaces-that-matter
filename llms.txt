@@ -6,10 +6,10 @@
 
 Points clés :
 
-- Référentiel en 8 dimensions : dynamique relationnelle, adaptabilité émotionnelle, narration spatiale, activation de l'engagement, hybridation fluide, ouverture à l'extérieur, gouvernance spatiale, intégration de la nature.
+- Référentiel en 8 dimensions : dynamique relationnelle, adaptabilité émotionnelle, narration spatiale, activation de l'engagement, expérience digitale, hybride et IA, ouverture à l'extérieur, gouvernance spatiale, intégration de la nature.
 - Fondements scientifiques : neurosciences, psychologie environnementale, ergonomie, sociologie des organisations, économie comportementale.
 - Processus en 4 étapes : souscription et déploiement du questionnaire (environ 15 minutes par collaborateur, 2 à 4 semaines de déploiement), scoring et analyse (score global et par dimension), débriefing optionnel avec un expert, obtention du label.
-- Validité du label : 2 ans, renouvelable.
+- Validité du label : 1 an, renouvelable.
 - Éligibilité : organisations d'au moins 50 collaborateurs, avec un taux de réponse minimum de 50 %.
 - Données anonymisées et traitées conformément au RGPD ; l'employeur n'a accès qu'aux résultats agrégés.
 - Complémentaire des certifications environnementales du bâtiment (HQE, WELL, BREEAM) : celles-ci mesurent la performance technique du bâtiment, STM mesure son impact humain.
