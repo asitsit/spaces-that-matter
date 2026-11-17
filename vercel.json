@@ -70,5 +70,11 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/.well-known/ai.txt",
+      "destination": "/ai/ai.txt"
+    }
   ]
 }
