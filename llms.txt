@@ -54,6 +54,7 @@ Points clés :
 
 - Email : contact@spacesthatmatter.com
 - LinkedIn : https://www.linkedin.com/company/112358399/
+- Wikidata : https://www.wikidata.org/wiki/Q142196961
 - Flux RSS du blog : https://spacesthatmatter.com/feed.xml (anglais : https://spacesthatmatter.com/en/feed.xml)
 - Démonstration : https://cal.com/alexandre-sitbon/demo-spaces-that-matter
 - Partenaire fondateur : [La Fabrique Spinoza](https://www.fabriquespinoza.org/)
