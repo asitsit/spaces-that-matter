@@ -1,0 +1,52 @@
+{
+  "name": "Spaces That Matter",
+  "alternateName": "STM",
+  "url": "https://spacesthatmatter.com",
+  "updated": "2026-11-17",
+  "languages": [
+    "fr",
+    "en"
+  ],
+  "description": {
+    "fr": "Spaces That Matter est le nouveau label qui mesure la performance humaine des espaces de travail. Construit avec La Fabrique Spinoza à partir de plus de 200 références scientifiques, il évalue l'impact réel des bureaux sur l'engagement, le bien-être, la collaboration et la performance, à partir d'un questionnaire rempli par les collaborateurs.",
+    "en": "Spaces That Matter is the new label that measures the human performance of workspaces. Built with La Fabrique Spinoza on more than 200 scientific references, it assesses the real impact of offices on engagement, well-being, collaboration and performance, through a questionnaire completed by employees."
+  },
+  "keyFacts": {
+    "dimensions": 8,
+    "scientificReferences": "200+",
+    "questionnaireDurationMinutes": 10,
+    "minimumParticipationPercent": 50,
+    "labelValidityYears": 1,
+    "dataProtection": "Anonymized data, GDPR compliant; employers only see aggregated results",
+    "partner": "La Fabrique Spinoza"
+  },
+  "dimensions": [
+    "Dynamique relationnelle",
+    "Adaptabilité émotionnelle",
+    "Narration spatiale",
+    "Activation de l'engagement",
+    "Expérience digitale, hybride et IA",
+    "Ouverture à l'extérieur",
+    "Gouvernance spatiale",
+    "Intégration de la nature"
+  ],
+  "founders": [
+    "Laeticia Latil",
+    "Maamoun Laariba",
+    "Amélie Motte",
+    "Alexandre Sitbon"
+  ],
+  "pages": {
+    "about": "https://spacesthatmatter.com/pages/about.html",
+    "label": "https://spacesthatmatter.com/pages/label.html",
+    "methodology": "https://spacesthatmatter.com/pages/methodologie.html",
+    "faq": "https://spacesthatmatter.com/pages/faq.html",
+    "team": "https://spacesthatmatter.com/pages/equipe.html",
+    "contact": "https://spacesthatmatter.com/pages/contact.html",
+    "english": "https://spacesthatmatter.com/en/"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/112358399/"
+  ],
+  "contact": "contact@spacesthatmatter.com"
+}

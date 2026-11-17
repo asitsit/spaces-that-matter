@@ -45,6 +45,11 @@ Points clés :
 - [Flex office: a promise kept or a collective disillusion?](https://spacesthatmatter.com/en/pages/blog/flex-office-promesse-desillusion.html)
 - [HQE, WELL, BREEAM vs STM](https://spacesthatmatter.com/en/pages/blog/hqe-well-breeam-vs-stm.html)
 
+## Données pour les IA
+
+- [Résumé](https://spacesthatmatter.com/ai/summary.json), [FAQ](https://spacesthatmatter.com/ai/faq.json), [Services](https://spacesthatmatter.com/ai/service.json) au format JSON
+- Préférences : https://spacesthatmatter.com/.well-known/ai.txt
+
 ## Contact
 
 - Email : contact@spacesthatmatter.com

@@ -1,0 +1,71 @@
+{
+  "name": "Spaces That Matter — FAQ",
+  "url": "https://spacesthatmatter.com/pages/faq.html",
+  "updated": "2026-11-17",
+  "questions": [
+    {
+      "question": {
+        "fr": "Qu'est-ce que Spaces That Matter ?",
+        "en": "What is Spaces That Matter?"
+      },
+      "answer": {
+        "fr": "Le nouveau label qui mesure la performance humaine des espaces de travail, construit avec La Fabrique Spinoza à partir de plus de 200 références scientifiques. Il évalue l'impact réel des bureaux sur l'engagement, le bien-être, la collaboration et la performance, à partir de l'expérience des collaborateurs.",
+        "en": "The new label that measures the human performance of workspaces, built with La Fabrique Spinoza on more than 200 scientific references. It assesses the real impact of offices on engagement, well-being, collaboration and performance, based on what employees experience."
+      }
+    },
+    {
+      "question": {
+        "fr": "Comment se déroule la labellisation ?",
+        "en": "How does the certification process work?"
+      },
+      "answer": {
+        "fr": "Les collaborateurs répondent à un questionnaire anonyme d'environ 10 minutes, structuré autour de 8 dimensions. Les réponses produisent un score global et un score par dimension. Le label est attribué lorsque le seuil est atteint, avec au moins 50 % de participation.",
+        "en": "Employees answer an anonymous questionnaire of about 10 minutes built around 8 dimensions. Answers produce an overall score and a score per dimension. The label is awarded when the threshold is reached, with at least 50% participation."
+      }
+    },
+    {
+      "question": {
+        "fr": "Combien de temps dure la démarche ?",
+        "en": "How long does the process take?"
+      },
+      "answer": {
+        "fr": "2 à 4 semaines de mise en place, 3 semaines d'ouverture du questionnaire, puis 2 à 4 semaines pour recevoir les résultats.",
+        "en": "2 to 4 weeks of preparation, 3 weeks with the questionnaire open, then 2 to 4 weeks to receive the results."
+      }
+    },
+    {
+      "question": {
+        "fr": "Combien de temps le label est-il valable ?",
+        "en": "How long is the label valid?"
+      },
+      "answer": {
+        "fr": "Un an, renouvelable : le renouvellement permet de mesurer les progrès dans le temps.",
+        "en": "One year, renewable, so progress can be measured over time."
+      }
+    },
+    {
+      "question": {
+        "fr": "Les réponses sont-elles anonymes ?",
+        "en": "Are answers anonymous?"
+      },
+      "answer": {
+        "fr": "Oui. Les données sont anonymisées et traitées conformément au RGPD ; l'employeur n'a accès qu'aux résultats agrégés.",
+        "en": "Yes. Data is anonymized and processed in line with the GDPR; the employer only sees aggregated results."
+      }
+    },
+    {
+      "question": {
+        "fr": "Quelles sont les 8 dimensions évaluées ?",
+        "en": "What are the 8 dimensions assessed?"
+      },
+      "answer": {
+        "fr": "Dynamique relationnelle, adaptabilité émotionnelle, narration spatiale, activation de l'engagement, expérience digitale, hybride et IA, ouverture à l'extérieur, gouvernance spatiale et intégration de la nature.",
+        "en": "Relational dynamics, emotional adaptability, spatial storytelling, engagement activation, digital, hybrid & AI experience, openness to the outside, spatial governance and integration of nature."
+      }
+    }
+  ],
+  "more": {
+    "fr": "https://spacesthatmatter.com/pages/faq.html",
+    "en": "https://spacesthatmatter.com/en/pages/faq.html"
+  }
+}

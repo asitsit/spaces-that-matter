@@ -1,0 +1,49 @@
+{
+  "provider": {
+    "name": "Spaces That Matter",
+    "url": "https://spacesthatmatter.com",
+    "sameAs": [
+      "https://www.linkedin.com/company/112358399/"
+    ]
+  },
+  "updated": "2026-11-17",
+  "services": [
+    {
+      "name": {
+        "fr": "Labellisation Spaces That Matter",
+        "en": "Spaces That Matter certification"
+      },
+      "description": {
+        "fr": "Évaluation des espaces de travail par les collaborateurs (questionnaire anonyme d'environ 10 minutes, 8 dimensions), scoring global et par dimension, et attribution du label si le seuil est atteint. Label valable 1 an, renouvelable.",
+        "en": "Workspace assessment by employees (anonymous questionnaire of about 10 minutes, 8 dimensions), overall and per-dimension scoring, and award of the label when the threshold is reached. Valid for 1 year, renewable."
+      },
+      "audience": {
+        "fr": "Organisations et leurs directions immobilier, RH et environnement de travail",
+        "en": "Organizations and their real estate, HR and workplace teams"
+      },
+      "requirements": {
+        "minimumParticipationPercent": 50
+      },
+      "duration": {
+        "fr": "2 à 4 semaines de mise en place, 3 semaines de questionnaire, 2 à 4 semaines pour les résultats",
+        "en": "2–4 weeks of preparation, 3 weeks of questionnaire, 2–4 weeks for results"
+      },
+      "url": "https://spacesthatmatter.com/pages/label.html"
+    },
+    {
+      "name": {
+        "fr": "Débriefing des résultats",
+        "en": "Results debriefing"
+      },
+      "description": {
+        "fr": "Accompagnement optionnel par des experts pour lire les résultats et définir les priorités d'action (prestation complémentaire).",
+        "en": "Optional expert support to read the results and set action priorities (additional service)."
+      },
+      "url": "https://spacesthatmatter.com/pages/methodologie.html"
+    }
+  ],
+  "contact": {
+    "email": "contact@spacesthatmatter.com",
+    "page": "https://spacesthatmatter.com/pages/contact.html"
+  }
+}

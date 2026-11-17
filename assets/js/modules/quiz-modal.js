@@ -610,7 +610,7 @@ function injectHTML() {
         <p class="qm-cta-title">${T.emailTitle}</p>
         <p class="qm-cta-desc">${T.emailDesc}</p>
         <div class="qm-email-row">
-          <input type="email" id="qm-email-input" class="qm-email-input" placeholder="${T.placeholder}" autocomplete="email">
+          <input type="email" id="qm-email-input" class="qm-email-input" placeholder="${T.placeholder}" aria-label="${T.emailTitle}" autocomplete="email">
           <button id="qm-email-submit" class="btn btn-accent">${T.send}</button>
         </div>
         <p class="qm-email-confirm" id="qm-email-confirm">${T.sent}</p>
