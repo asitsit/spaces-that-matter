@@ -13,6 +13,7 @@ const LABELS = {
     navAria:   'Navigation principale',
     homeAria:  'Spaces That Matter — Accueil',
     home:      'Accueil',
+    about:     'À propos',
     label:     'Le label',
     methodo:   'La méthodologie',
     team:      "L'équipe",
@@ -29,6 +30,7 @@ const LABELS = {
     navAria:   'Main navigation',
     homeAria:  'Spaces That Matter — Home',
     home:      'Home',
+    about:     'About',
     label:     'The label',
     methodo:   'Methodology',
     team:      'The team',
@@ -124,6 +126,7 @@ ${langSwitch(lang, t)}
       <nav>
         <ul role="list" class="nav-mobile-list">
           <li><a href="${home}"              class="nav-mobile-link">${t.home}</a></li>
+          <li><a href="${root}pages/about.html"        class="nav-mobile-link">${t.about}</a></li>
           <li><a href="${root}pages/label.html"        class="nav-mobile-link">${t.label}</a></li>
           <li><a href="${root}pages/methodologie.html" class="nav-mobile-link">${t.methodo}</a></li>
           <li><a href="${root}pages/equipe.html"       class="nav-mobile-link">${t.team}</a></li>

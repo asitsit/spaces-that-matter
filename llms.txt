@@ -1,8 +1,8 @@
 # Spaces That Matter
 
-> Spaces That Matter (STM) est le premier label qui mesure la performance humaine des espaces de travail. Construit avec La Fabrique Spinoza (think tank sur le bonheur au travail) à partir de plus de 200 références scientifiques, il évalue l'impact réel des bureaux sur l'engagement, le bien-être, la collaboration et la performance des collaborateurs, à travers un questionnaire rempli par les collaborateurs eux-mêmes.
+> Spaces That Matter (STM) est le nouveau label qui mesure la performance humaine des espaces de travail. Construit avec La Fabrique Spinoza (think tank sur le bonheur au travail) à partir de plus de 200 références scientifiques, il évalue l'impact réel des bureaux sur l'engagement, le bien-être, la collaboration et la performance des collaborateurs, à travers un questionnaire rempli par les collaborateurs eux-mêmes.
 >
-> Spaces That Matter (STM) is the first label that measures the human performance of workspaces. Built with La Fabrique Spinoza on more than 200 scientific references, it assesses the real impact of offices on employee engagement, well-being, collaboration and performance, through a questionnaire completed by employees themselves.
+> Spaces That Matter (STM) is the new label that measures the human performance of workspaces. Built with La Fabrique Spinoza on more than 200 scientific references, it assesses the real impact of offices on employee engagement, well-being, collaboration and performance, through a questionnaire completed by employees themselves.
 
 Points clés :
 
@@ -18,6 +18,7 @@ Points clés :
 ## Pages principales
 
 - [Accueil](https://spacesthatmatter.com/): présentation du label, des 8 dimensions et du processus de labellisation
+- [À propos](https://spacesthatmatter.com/pages/about.html): qui sommes-nous, l'équipe fondatrice et les faits clés du label
 - [Le label](https://spacesthatmatter.com/pages/label.html): origine du label, genèse avec La Fabrique Spinoza, mission et vision
 - [La méthodologie](https://spacesthatmatter.com/pages/methodologie.html): détail des 8 dimensions, processus en 4 étapes, outil de mesure, conformité et indépendance
 - [L'équipe](https://spacesthatmatter.com/pages/equipe.html): les membres fondateurs et leurs expertises
@@ -34,6 +35,7 @@ Points clés :
 ## English version
 
 - [Home](https://spacesthatmatter.com/en/): the label, the 8 dimensions and the certification process
+- [About](https://spacesthatmatter.com/en/pages/about.html): who we are, the founding team and key facts about the label
 - [The label](https://spacesthatmatter.com/en/pages/label.html): origin, genesis with La Fabrique Spinoza, mission and vision
 - [Methodology](https://spacesthatmatter.com/en/pages/methodologie.html): the 8 dimensions, the 4-step process, the measurement tool and compliance
 - [The team](https://spacesthatmatter.com/en/pages/equipe.html): founding members and their expertise
@@ -46,5 +48,7 @@ Points clés :
 ## Contact
 
 - Email : contact@spacesthatmatter.com
+- LinkedIn : https://www.linkedin.com/company/112358399/
+- Flux RSS du blog : https://spacesthatmatter.com/feed.xml (anglais : https://spacesthatmatter.com/en/feed.xml)
 - Démonstration : https://cal.com/alexandre-sitbon/demo-spaces-that-matter
 - Partenaire fondateur : [La Fabrique Spinoza](https://www.fabriquespinoza.org/)

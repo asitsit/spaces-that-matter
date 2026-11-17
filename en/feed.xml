@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spaces That Matter — Blog (English)</title>
+    <link>https://spacesthatmatter.com/en/pages/blog.html</link>
+    <atom:link href="https://spacesthatmatter.com/en/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>Articles and research on the human performance of workspaces.</description>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Nov 2026 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Why the workspace is a lever for human performance</title>
+      <link>https://spacesthatmatter.com/en/pages/blog/pourquoi-espace-travail-levier-performance.html</link>
+      <guid isPermaLink="true">https://spacesthatmatter.com/en/pages/blog/pourquoi-espace-travail-levier-performance.html</guid>
+      <pubDate>Sat, 15 Mar 2025 08:00:00 GMT</pubDate>
+      <description>Companies invest heavily in their offices. But how many actually measure whether these spaces create value for their teams? The psychological and neurological mechanisms explained.</description>
+    </item>
+    <item>
+      <title>Flex office: a promise kept or a collective disillusion?</title>
+      <link>https://spacesthatmatter.com/en/pages/blog/flex-office-promesse-desillusion.html</link>
+      <guid isPermaLink="true">https://spacesthatmatter.com/en/pages/blog/flex-office-promesse-desillusion.html</guid>
+      <pubDate>Tue, 28 Jan 2025 08:00:00 GMT</pubDate>
+      <description>Flex office has transformed thousands of offices in France. Yet the data shows that flexible offices can degrade the employee experience. Analysis and possible solutions.</description>
+    </item>
+    <item>
+      <title>HQE, WELL, BREEAM vs STM: the difference between an environmental certification and a human label</title>
+      <link>https://spacesthatmatter.com/en/pages/blog/hqe-well-breeam-vs-stm.html</link>
+      <guid isPermaLink="true">https://spacesthatmatter.com/en/pages/blog/hqe-well-breeam-vs-stm.html</guid>
+      <pubDate>Mon, 18 Nov 2024 08:00:00 GMT</pubDate>
+      <description>HQE, WELL and BREEAM assess the technical performance of the building. Spaces That Matter assesses the human performance of the space. Two complementary but fundamentally different approaches.</description>
+    </item>
+  </channel>
+</rss>
