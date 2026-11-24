@@ -3,15 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Animation d'ouverture : à l'arrivée sur le site ou au changement de langue, pas entre les pages -->
-  <script>
-    (function () {
-      var html = document.documentElement, lang = html.lang || 'fr', prev = null, internal = false;
-      try { internal = !!document.referrer && new URL(document.referrer).host === location.host; } catch (e) {}
-      try { prev = sessionStorage.getItem('stm-lang'); sessionStorage.setItem('stm-lang', lang); } catch (e) {}
-      if (internal && prev === lang) html.classList.add('no-loader');
-    })();
-  </script>
   <title>Notre équipe | Spaces That Matter</title>
   <meta name="description" content="L'équipe Spaces That Matter, notre parrain, nos ambassadeurs et nos partenaires. Des personnes engagées pour transformer les espaces de travail.">
   <meta name="author" content="Spaces That Matter">
@@ -23,26 +14,18 @@
   <meta property="og:description" content="L'équipe Spaces That Matter, notre parrain, nos ambassadeurs et nos partenaires. Des personnes engagées pour transformer les espaces de travail.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://spacesthatmatter.com/pages/equipe.html">
-  <meta property="og:image" content="https://spacesthatmatter.com/assets/images/portfolio/fond-header.jpg">
+  <meta property="og:image" content="https://spacesthatmatter.com/assets/images/portfolio/fond-header-1920.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Notre équipe | Spaces That Matter">
   <meta name="twitter:description" content="L'équipe Spaces That Matter, notre parrain, nos ambassadeurs et nos partenaires. Des personnes engagées pour transformer les espaces de travail.">
-  <meta name="twitter:image" content="https://spacesthatmatter.com/assets/images/portfolio/fond-header.jpg">
+  <meta name="twitter:image" content="https://spacesthatmatter.com/assets/images/portfolio/fond-header-1920.jpg">
   <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png?v=2">
   <link rel="shortcut icon" href="../assets/images/logo/favicon.png?v=2">
   <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="../assets/fonts/karla-normal-latin-5.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/crimson-pro-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDW588TY2T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MDW588TY2T');
-  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -141,12 +124,7 @@
 </script>
 </head>
 <body data-nav-theme="light">
-
-<div class="loader" aria-hidden="true">
-  <img class="loader-logo" src="../assets/images/logo/logo-round-dark.png" alt="Logo Spaces That Matter">
-  <div class="loader-progress"><div class="loader-bar"></div></div>
-  <span class="loader-num">0%</span>
-</div>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <div class="cursor-dot"  aria-hidden="true"></div>
 <div class="cursor-ring" aria-hidden="true"></div>
 <header id="site-nav"></header>
@@ -182,7 +160,7 @@
       <!-- Laeticia Latil -->
       <article class="member-card">
         <div class="member-photo">
-          <img src="../assets/images/team/membre-laeticia.jpg" alt="Laeticia Latil" loading="lazy">
+          <img width="554" height="554" src="../assets/images/team/membre-laeticia.jpg" alt="Laeticia Latil" loading="lazy">
         </div>
         <h3 class="member-name">Laeticia Latil</h3>
         <p class="member-bio">Laeticia pilote la transformation culturelle et spatiale et met son expertise QVCT/barométrie au service d'un diagnostic Spaces That Matter centré sur le vécu réel et la création de lien dans les espaces.</p>
@@ -191,7 +169,7 @@
       <!-- Maamoun Laariba -->
       <article class="member-card">
         <div class="member-photo">
-          <img src="../assets/images/team/membre-maamoun.jpg" alt="Maamoun Laariba" loading="lazy">
+          <img width="554" height="554" src="../assets/images/team/membre-maamoun.jpg" alt="Maamoun Laariba" loading="lazy">
         </div>
         <h3 class="member-name">Maamoun Laariba</h3>
         <p class="member-bio">Maamoun conçoit et industrialise les systèmes data (collecte, traitement, dashboards) pour rendre le scoring Spaces That Matter fiable, robuste et exploitable à grande échelle.</p>
@@ -200,7 +178,7 @@
       <!-- Amélie Motte -->
       <article class="member-card">
         <div class="member-photo">
-          <img src="../assets/images/team/membre-amelie.jpg" alt="Amélie Motte" loading="lazy">
+          <img width="554" height="554" src="../assets/images/team/membre-amelie.jpg" alt="Amélie Motte" loading="lazy">
         </div>
         <h3 class="member-name">Amélie Motte</h3>
         <p class="member-bio">Amélie apporte une expertise de fond sur la transformation du travail (recherche, études, référentiels) pour ancrer Spaces That Matter dans une base scientifique solide et une lecture fine des enjeux organisationnels.</p>
@@ -209,7 +187,7 @@
       <!-- Alexandre Sitbon -->
       <article class="member-card">
         <div class="member-photo">
-          <img src="../assets/images/team/membre-alexandre.jpg" alt="Alexandre Sitbon" loading="lazy">
+          <img width="554" height="554" src="../assets/images/team/membre-alexandre.jpg" alt="Alexandre Sitbon" loading="lazy">
         </div>
         <h3 class="member-name">Alexandre Sitbon</h3>
         <p class="member-bio">Alexandre conçoit et pilote des dispositifs participatifs et l'analyse des données barométriques pour transformer les résultats Spaces That Matter en décisions claires et en plans d'action concrets, appropriés par les équipes.</p>
@@ -273,16 +251,16 @@
       <div class="footer-legal-links">
         <a href="legal/mentions-legales.html" class="footer-legal-link">Mentions légales</a>
         <a href="legal/confidentialite.html" class="footer-legal-link">Confidentialité</a>
-        <a href="legal/cookies.html" class="footer-legal-link">Cookies</a>
+        <a href="legal/cookies.html" class="footer-legal-link">Cookies</a><button type="button" class="footer-legal-link footer-consent" data-consent-open>Gérer les cookies</button>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script defer src="../assets/js/vendor/gsap.min.js"></script>
+<script defer src="../assets/js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="../assets/js/vendor/split-type.min.js"></script>
+<script defer src="../assets/js/vendor/lenis.min.js"></script>
 <script type="module" src="../assets/js/main.js"></script>
 
 <!-- CSS spécifique à cette page -->

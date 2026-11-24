@@ -3,15 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Animation d'ouverture : à l'arrivée sur le site ou au changement de langue, pas entre les pages -->
-  <script>
-    (function () {
-      var html = document.documentElement, lang = html.lang || 'fr', prev = null, internal = false;
-      try { internal = !!document.referrer && new URL(document.referrer).host === location.host; } catch (e) {}
-      try { prev = sessionStorage.getItem('stm-lang'); sessionStorage.setItem('stm-lang', lang); } catch (e) {}
-      if (internal && prev === lang) html.classList.add('no-loader');
-    })();
-  </script>
   <title>Human performance label for workspaces | Spaces That Matter</title>
   <meta name="description" content="The new label that measures the real impact of your workspaces on employee engagement and performance. 8 dimensions, 200+ scientific references.">
   <meta name="author" content="Spaces That Matter">
@@ -23,32 +14,22 @@
   <meta property="og:description" content="The new label that measures the real impact of your workspaces on employee engagement and performance. 8 dimensions, 200+ scientific references.">
   <meta property="og:type"        content="website">
   <meta property="og:url"         content="https://spacesthatmatter.com/en/">
-  <meta property="og:image"       content="https://spacesthatmatter.com/assets/images/portfolio/fond-header.jpg">
+  <meta property="og:image"       content="https://spacesthatmatter.com/assets/images/portfolio/fond-header-1920.jpg">
   <meta property="og:locale"      content="en_US">
   <meta name="twitter:card"       content="summary_large_image">
   <meta name="twitter:site"       content="@spacesthatmatter">
   <meta name="twitter:title"      content="Human performance label for workspaces | Spaces That Matter">
   <meta name="twitter:description" content="The new label that measures the real impact of your workspaces on employee engagement and performance. 8 dimensions, 200+ scientific references.">
-  <meta name="twitter:image"      content="https://spacesthatmatter.com/assets/images/portfolio/fond-header.jpg">
+  <meta name="twitter:image"      content="https://spacesthatmatter.com/assets/images/portfolio/fond-header-1920.jpg">
   <meta name="theme-color" content="#FAFAF8">
   <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png?v=2">
   <link rel="shortcut icon" href="../assets/images/logo/favicon.png?v=2">
   <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="../assets/fonts/karla-normal-latin-5.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/crimson-pro-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
 
   <link rel="stylesheet" href="../assets/css/style.css">
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDW588TY2T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MDW588TY2T');
-  </script>
 
   <script type="application/ld+json">
 {
@@ -63,7 +44,7 @@
     "@type": "ImageObject",
     "url": "https://spacesthatmatter.com/assets/images/logo/logo-round-dark.png"
   },
-  "image": "https://spacesthatmatter.com/assets/images/portfolio/fond-header.jpg",
+  "image": "https://spacesthatmatter.com/assets/images/portfolio/fond-header-1920.jpg",
   "areaServed": "FR",
   "knowsAbout": [
     "workspaces",
@@ -200,13 +181,9 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#contenu">Skip to content</a>
 
 <!-- Loader -->
-<div class="loader" aria-hidden="true">
-  <img class="loader-logo" src="../assets/images/logo/logo-round-dark.png" alt="Spaces That Matter logo">
-  <div class="loader-progress"><div class="loader-bar"></div></div>
-  <span class="loader-num">0%</span>
-</div>
 
 <!-- Cursor -->
 <div class="cursor-dot"  aria-hidden="true"></div>
@@ -221,9 +198,10 @@
 ════════════════════════════════════════════════════════════ -->
 <section class="hero" aria-labelledby="hero-title">
   <div class="hero-bg">
-    <img src="../assets/images/portfolio/fond-header.jpg"
-         alt="Collaborative workspace"
-         fetchpriority="high" loading="eager">
+    <picture>
+      <source type="image/webp" srcset="../assets/images/portfolio/fond-header-1280.webp 1280w, ../assets/images/portfolio/fond-header-1920.webp 1920w, ../assets/images/portfolio/fond-header-2560.webp 2560w" sizes="100vw">
+      <img src="../assets/images/portfolio/fond-header-1920.jpg" alt="Collaborative workspace" width="1920" height="1280" fetchpriority="high">
+    </picture>
   </div>
 
   <div class="hero-content">
@@ -318,7 +296,7 @@
   </div>
 
   <div class="constat-media-col">
-    <img src="../assets/images/home/constat-bureau.jpg"
+    <img width="900" height="800" src="../assets/images/home/constat-bureau.jpg"
          alt="Large modern office space — real estate investment without measurement of human impact"
          data-cursor="view" loading="lazy">
   </div>
@@ -345,7 +323,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-dynamique-relationnelle.jpg"
+          <img width="800" height="600" src="../assets/images/home/dim-dynamique-relationnelle.jpg"
                alt="Colleagues laughing and chatting spontaneously during a break at the office" loading="lazy">
         </div>
         <h3>Relational dynamics</h3>
@@ -354,7 +332,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-adaptabilite-emotionnelle.jpg"
+          <img width="1200" height="800" src="../assets/images/home/dim-adaptabilite-emotionnelle.jpg"
                alt="Employee working quietly in an alcove within an open space, preserving her concentration" loading="lazy">
         </div>
         <h3>Emotional adaptability</h3>
@@ -363,7 +341,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-narration-spatiale.jpg"
+          <img width="800" height="600" src="../assets/images/home/dim-narration-spatiale.jpg"
                alt="Two employees discovering the company's culture and history displayed on the workspace wall" loading="lazy">
         </div>
         <h3>Spatial storytelling</h3>
@@ -372,7 +350,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-liens-sociaux.jpg"
+          <img width="480" height="220" src="../assets/images/home/dim-liens-sociaux.jpg"
                alt="Engaged team during a lively, participatory meeting" loading="lazy">
         </div>
         <h3>Engagement activation</h3>
@@ -381,7 +359,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-hybridation-fluide.jpg"
+          <img width="800" height="600" src="../assets/images/home/dim-hybridation-fluide.jpg"
                alt="Team in a meeting room connected to remote colleagues on a large screen, illustrating hybrid work" loading="lazy">
         </div>
         <h3>Digital, hybrid &amp; AI experience</h3>
@@ -390,7 +368,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-ouverture-exterieur.jpg"
+          <img width="1200" height="800" src="../assets/images/home/dim-ouverture-exterieur.jpg"
                alt="Bright reception hall of a modern office building, open and welcoming" loading="lazy">
         </div>
         <h3>Openness to the outside</h3>
@@ -399,7 +377,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-gouvernance-spatiale.jpg"
+          <img width="800" height="600" src="../assets/images/home/dim-gouvernance-spatiale.jpg"
                alt="Diverse team planning together around a table in an inclusive meeting" loading="lazy">
         </div>
         <h3>Spatial governance</h3>
@@ -408,7 +386,7 @@
 
       <article class="dim-card">
         <div class="dim-card-img">
-          <img src="../assets/images/home/dim-integration-nature.jpg"
+          <img width="800" height="600" src="../assets/images/home/dim-integration-nature.jpg"
                alt="Smiling colleagues in a bright, lively office filled with plants" loading="lazy">
         </div>
         <h3>Integration of nature</h3>
@@ -537,7 +515,7 @@
 
       <div class="step-card">
         <div class="step-num-large">
-          <img class="step-ring" src="../assets/images/logo/ring-dark.png" alt="Step 1">
+          <img width="600" height="600" class="step-ring" src="../assets/images/logo/ring-dark.png" alt="Step 1">
           <span aria-hidden="true">1</span>
         </div>
         <h3>Subscription &amp; Roll-out</h3>
@@ -546,7 +524,7 @@
 
       <div class="step-card">
         <div class="step-num-large">
-          <img class="step-ring" src="../assets/images/logo/ring-dark.png" alt="Step 2">
+          <img width="600" height="600" class="step-ring" src="../assets/images/logo/ring-dark.png" alt="Step 2">
           <span aria-hidden="true">2</span>
         </div>
         <h3>Scoring &amp; analysis</h3>
@@ -555,7 +533,7 @@
 
       <div class="step-card">
         <div class="step-num-large">
-          <img class="step-ring" src="../assets/images/logo/ring-dark.png" alt="Step 3">
+          <img width="600" height="600" class="step-ring" src="../assets/images/logo/ring-dark.png" alt="Step 3">
           <span aria-hidden="true">3</span>
         </div>
         <h3>Debriefing <span class="optional">(optional)</span></h3>
@@ -564,7 +542,7 @@
 
       <div class="step-card step-card--accent">
         <div class="step-num-large step-num-large--beige">
-          <img class="step-ring" src="../assets/images/logo/ring-beige.png" alt="Step 4">
+          <img width="600" height="600" class="step-ring" src="../assets/images/logo/ring-beige.png" alt="Step 4">
           <span aria-hidden="true">4</span>
         </div>
         <h3>Award of the Label</h3>
@@ -603,7 +581,7 @@
           </a>
         </div>
         <div class="prep-media">
-          <img src="../assets/images/home/constat-equipe.jpg"
+          <img width="640" height="420" src="../assets/images/home/constat-equipe.jpg"
                alt="Two employees talking and preparing their workspace strategy"
                loading="lazy">
         </div>
@@ -752,17 +730,17 @@
       <div class="footer-legal-links">
         <a href="pages/legal/mentions-legales.html"  class="footer-legal-link">Legal notice</a>
         <a href="pages/legal/confidentialite.html"   class="footer-legal-link">Privacy</a>
-        <a href="pages/legal/cookies.html"           class="footer-legal-link">Cookies</a>
+        <a href="pages/legal/cookies.html"           class="footer-legal-link">Cookies</a><button type="button" class="footer-legal-link footer-consent" data-consent-open>Cookie settings</button>
       </div>
     </div>
   </div>
 </footer>
 
 <!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script defer src="../assets/js/vendor/gsap.min.js"></script>
+<script defer src="../assets/js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="../assets/js/vendor/split-type.min.js"></script>
+<script defer src="../assets/js/vendor/lenis.min.js"></script>
 <script type="module" src="../assets/js/main.js"></script>
 </body>
 </html>

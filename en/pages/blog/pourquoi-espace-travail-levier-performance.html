@@ -3,15 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Animation d'ouverture : à l'arrivée sur le site ou au changement de langue, pas entre les pages -->
-  <script>
-    (function () {
-      var html = document.documentElement, lang = html.lang || 'fr', prev = null, internal = false;
-      try { internal = !!document.referrer && new URL(document.referrer).host === location.host; } catch (e) {}
-      try { prev = sessionStorage.getItem('stm-lang'); sessionStorage.setItem('stm-lang', lang); } catch (e) {}
-      if (internal && prev === lang) html.classList.add('no-loader');
-    })();
-  </script>
   <title>The workspace as a lever for human performance | STM</title>
   <meta name="description" content="Noise, light, density, nature: how the workspace affects the brain, and why you should measure the employee experience before investing.">
   <meta name="author" content="Spaces That Matter">
@@ -30,9 +21,9 @@
   <meta name="twitter:description" content="Noise, light, density, nature: how the workspace affects the brain, and why you should measure the employee experience before investing.">
   <meta name="twitter:image" content="https://spacesthatmatter.com/assets/images/blog/article-featured.jpg">
   <link rel="icon" type="image/png" href="../../../assets/images/logo/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="../../../assets/fonts/karla-normal-latin-5.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../../assets/fonts/crimson-pro-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../../assets/fonts/fonts.css">
   <link rel="stylesheet" href="../../../assets/css/style.css">
   <script type="application/ld+json">
   {
@@ -64,14 +55,6 @@
     }
   }
   </script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDW588TY2T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MDW588TY2T');
-  </script>
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -86,11 +69,7 @@
   <link rel="alternate" type="application/rss+xml" title="Spaces That Matter — Blog (English)" href="/en/feed.xml">
 </head>
 <body data-nav-theme="light">
-<div class="loader" aria-hidden="true">
-  <img class="loader-logo" src="../../../assets/images/logo/logo-round-dark.png" alt="Spaces That Matter logo">
-  <div class="loader-progress"><div class="loader-bar"></div></div>
-  <span class="loader-num">0%</span>
-</div>
+<a class="skip-link" href="#contenu">Skip to content</a>
 <div class="cursor-dot" aria-hidden="true"></div>
 <div class="cursor-ring" aria-hidden="true"></div>
 <header id="site-nav"></header>
@@ -114,7 +93,7 @@
       </p>
     </div>
     <div class="article-hero-img">
-      <img src="../../../assets/images/blog/article-featured.jpg"
+      <img width="1200" height="700" src="../../../assets/images/blog/article-featured.jpg"
            alt="High-performing workspace" loading="eager">
     </div>
   </header>
@@ -231,7 +210,7 @@
     <div class="blog-grid" style="margin-top:var(--space-8);" data-stagger>
       <article class="post-card">
         <a href="flex-office-promesse-desillusion.html" class="post-card-media">
-          <img src="../../../assets/images/blog/article-2.jpg" alt="Flex office" loading="lazy">
+          <img width="1200" height="700" src="../../../assets/images/blog/article-2.jpg" alt="Flex office" loading="lazy">
           <span class="post-tag post-tag--overlay">Article</span>
         </a>
         <div class="post-card-body">
@@ -242,7 +221,7 @@
       </article>
       <article class="post-card">
         <a href="hqe-well-breeam-vs-stm.html" class="post-card-media">
-          <img src="../../../assets/images/blog/article-3.jpg" alt="Labels" loading="lazy">
+          <img width="1200" height="700" src="../../../assets/images/blog/article-3.jpg" alt="Labels" loading="lazy">
           <span class="post-tag post-tag--overlay">Article</span>
         </a>
         <div class="post-card-body">
@@ -263,16 +242,16 @@
       <p class="footer-legal">&copy; <span id="footer-year"></span> Spaces That Matter · Fabrique Spinoza</p>
       <div class="footer-legal-links"><a href="../../pages/about.html" class="footer-legal-link">About</a><a href="../../pages/about.html" class="footer-legal-link">About</a>
         <a href="../legal/mentions-legales.html" class="footer-legal-link">Legal notice</a>
-        <a href="../legal/confidentialite.html" class="footer-legal-link">Privacy</a>
+        <a href="../legal/confidentialite.html" class="footer-legal-link">Privacy</a><button type="button" class="footer-legal-link footer-consent" data-consent-open>Cookie settings</button>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script defer src="../../../assets/js/vendor/gsap.min.js"></script>
+<script defer src="../../../assets/js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="../../../assets/js/vendor/split-type.min.js"></script>
+<script defer src="../../../assets/js/vendor/lenis.min.js"></script>
 <script type="module" src="../../../assets/js/main.js"></script>
 
 <style>

@@ -7,6 +7,20 @@ export function initAnimations() {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  // Mouvement réduit demandé : aucun déplacement, tout est affiché dans son état final
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('[data-counter]').forEach(el => {
+      const decimals = parseInt(el.dataset.decimals || 0);
+      el.textContent = (el.dataset.prefix || '') + parseFloat(el.dataset.counter).toFixed(decimals) + (el.dataset.suffix || '');
+    });
+    ScrollTrigger.create({
+      start: 80,
+      onEnter:     () => document.querySelector('.nav')?.classList.add('is-scrolled'),
+      onLeaveBack: () => document.querySelector('.nav')?.classList.remove('is-scrolled'),
+    });
+    return;
+  }
+
   // ── 1. Split text line by line ────────────────────────────
   // SplitType wraps chaque ligne dans un .line
   // On anime chaque .line avec y + opacity

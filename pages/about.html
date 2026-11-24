@@ -4,15 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0; url=label.html">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Animation d'ouverture : à l'arrivée sur le site ou au changement de langue, pas entre les pages -->
-  <script>
-    (function () {
-      var html = document.documentElement, lang = html.lang || 'fr', prev = null, internal = false;
-      try { internal = !!document.referrer && new URL(document.referrer).host === location.host; } catch (e) {}
-      try { prev = sessionStorage.getItem('stm-lang'); sessionStorage.setItem('stm-lang', lang); } catch (e) {}
-      if (internal && prev === lang) html.classList.add('no-loader');
-    })();
-  </script>
   <title>À propos — Spaces That Matter, le nouveau label</title>
   <meta name="description" content="Qui sommes-nous : Spaces That Matter, le nouveau label de la performance humaine des espaces de travail, ses faits clés et son équipe fondatrice.">
   <meta name="author" content="Spaces That Matter">
@@ -30,18 +21,10 @@
   <link rel="icon" type="image/png" href="../assets/images/logo/favicon.png?v=2">
   <link rel="shortcut icon" href="../assets/images/logo/favicon.png?v=2">
   <link rel="apple-touch-icon" href="../assets/images/logo/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="../assets/fonts/karla-normal-latin-5.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/crimson-pro-normal-latin-3.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
   <link rel="stylesheet" href="../assets/css/style.css">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDW588TY2T"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-MDW588TY2T');
-  </script>
   <link rel="alternate" type="application/rss+xml" title="Spaces That Matter — Blog" href="/feed.xml">
 <script type="application/ld+json">
 {
@@ -67,12 +50,7 @@
 </script>
 </head>
 <body data-nav-theme="light">
-
-<div class="loader" aria-hidden="true">
-  <img class="loader-logo" src="../assets/images/logo/logo-round-dark.png" alt="Logo Spaces That Matter">
-  <div class="loader-progress"><div class="loader-bar"></div></div>
-  <span class="loader-num">0%</span>
-</div>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
 <div class="cursor-dot"  aria-hidden="true"></div>
 <div class="cursor-ring" aria-hidden="true"></div>
 <header id="site-nav"></header>
@@ -207,16 +185,16 @@
       <div class="footer-legal-links">
         <a href="legal/mentions-legales.html" class="footer-legal-link">Mentions légales</a>
         <a href="legal/confidentialite.html" class="footer-legal-link">Confidentialité</a>
-        <a href="legal/cookies.html" class="footer-legal-link">Cookies</a>
+        <a href="legal/cookies.html" class="footer-legal-link">Cookies</a><button type="button" class="footer-legal-link footer-consent" data-consent-open>Gérer les cookies</button>
       </div>
     </div>
   </div>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script defer src="../assets/js/vendor/gsap.min.js"></script>
+<script defer src="../assets/js/vendor/ScrollTrigger.min.js"></script>
+<script defer src="../assets/js/vendor/split-type.min.js"></script>
+<script defer src="../assets/js/vendor/lenis.min.js"></script>
 <script type="module" src="../assets/js/main.js"></script>
 </body>
 </html>

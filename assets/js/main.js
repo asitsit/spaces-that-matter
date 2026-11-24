@@ -2,7 +2,7 @@
  * SPACES THAT MATTER — Main JS
  */
 
-import { initLoader }     from './modules/loader.js';
+import { initConsent }    from './modules/consent.js';
 import { initCursor }     from './modules/cursor.js';
 import { initNav }        from './modules/nav.js';
 import { initAnimations } from './animations.js';
@@ -27,21 +27,20 @@ const assetRoot = lang === 'en' ? `${root}../` : root;
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  // 1. Inject nav
+  // 1. Navigation, puis consentement (Google Analytics ne se charge qu'après accord)
   buildNav(root, assetRoot, lang);
-  initPageTransitions();
+  initConsent(lang, root);
 
-  // 2. Loader, puis tout le reste
-  initLoader(() => {
-    initLenis();
-    initCursor();
-    initNav();
-    initAnimations();
-    initTracking();
-    initAnchorScroll();
-    setFooterYear();
-    initQuizModal(lang);
-  });
+  // 2. Le reste, sans écran de chargement : la page s'affiche immédiatement.
+  //    Les transitions entre pages sont gérées par le navigateur (@view-transition dans style.css).
+  initLenis();
+  initCursor();
+  initNav();
+  initAnimations();
+  initTracking();
+  initAnchorScroll();
+  setFooterYear();
+  initQuizModal(lang);
 
 });
 
@@ -64,38 +63,14 @@ function initAnchorScroll() {
         if (window.lenis) {
           window.lenis.scrollTo(target, { offset: -offset });
         } else {
-          window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+          const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+          window.scrollTo({ top: target.offsetTop - offset, behavior: reduce ? 'auto' : 'smooth' });
         }
+        // Le focus clavier suit l'ancre (indispensable pour le lien « Aller au contenu »)
+        if (!target.matches('a[href], button, input, select, textarea, [tabindex]')) target.setAttribute('tabindex', '-1');
+        target.focus({ preventScroll: true });
       }
     });
-  });
-}
-
-/* Mini fondu de sortie avant de quitter la page pour une autre page du site */
-function initPageTransitions() {
-  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-
-  const html = document.documentElement;
-
-  document.addEventListener('click', e => {
-    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
-
-    const link = e.target.closest('a[href]');
-    if (!link || link.target === '_blank' || link.hasAttribute('download') || link.hasAttribute('data-quiz-open')) return;
-
-    const url = new URL(link.href, window.location.href);
-    if (url.origin !== window.location.origin) return;
-    // Ancre sur la même page : pas de transition
-    if (url.pathname === window.location.pathname && url.search === window.location.search) return;
-
-    e.preventDefault();
-    html.classList.add('is-page-leaving');
-    setTimeout(() => { window.location.href = url.href; }, 200);
-  });
-
-  // Retour arrière depuis le cache du navigateur : réafficher la page
-  window.addEventListener('pageshow', ev => {
-    if (ev.persisted) html.classList.remove('is-page-leaving');
   });
 }
 

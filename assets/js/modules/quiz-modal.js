@@ -185,25 +185,38 @@ function injectStyles() {
   const style = document.createElement('style');
   style.id = 'quiz-modal-styles';
   style.textContent = `
-/* ─── Overlay ─── */
+/* ─── Boîte de dialogue native (<dialog> ouverte avec showModal) ─── */
 .qm-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(20,25,45,.65);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: 0;
+  padding: 0.5rem;
+  border: 0;
+  background: transparent;
+  overscroll-behavior: contain; /* le défilement dans la boîte ne fait pas défiler la page */
+}
+.qm-overlay[open] {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity .3s ease;
 }
-.qm-overlay.is-open {
-  opacity: 1;
-  pointer-events: all;
+.qm-overlay::backdrop {
+  background: rgba(20,25,45,.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  overflow: hidden;
+  overscroll-behavior: contain;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .qm-overlay[open] {
+    transition: opacity .3s ease;
+    @starting-style { opacity: 0; }
+  }
+  .qm-overlay[open] .qm-panel {
+    @starting-style { transform: translateY(24px); }
+  }
 }
 
 /* ─── Panel ─── */
@@ -216,15 +229,11 @@ function injectStyles() {
   overflow-y: auto;
   padding: 1.75rem 2.25rem;
   position: relative;
-  transform: translateY(24px);
   transition: transform .35s cubic-bezier(.22,1,.36,1), max-width .35s ease;
   scrollbar-width: thin;
 }
 .qm-panel.is-results {
   max-width: 800px;
-}
-.qm-overlay.is-open .qm-panel {
-  transform: translateY(0);
 }
 
 /* ─── Close ─── */
@@ -541,7 +550,7 @@ function injectHTML() {
 
   const el = document.createElement('div');
   el.innerHTML = `
-<div class="qm-overlay" id="quiz-modal-overlay" role="dialog" aria-modal="true" aria-label="${T.dialogAria}">
+<dialog class="qm-overlay" id="quiz-modal-overlay" aria-label="${T.dialogAria}" closedby="any">
   <div class="qm-panel" id="quiz-modal-panel">
     <button class="qm-close" id="qm-close" aria-label="${T.closeAria}">
       <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
@@ -618,7 +627,7 @@ function injectHTML() {
       <button class="qm-restart-btn" id="qm-restart">${T.restart}</button>
     </div>
   </div>
-</div>
+</dialog>
   `.trim();
 
   document.body.appendChild(el.firstChild);
@@ -641,7 +650,7 @@ function loadQuestion() {
   document.getElementById('qm-bar').style.width     = `${(current / QUESTIONS.length) * 100}%`;
 
   const list = document.getElementById('qm-options');
-  list.innerHTML = '';
+  list.replaceChildren();
   q.options.forEach((opt, i) => {
     const li = document.createElement('li');
     li.innerHTML = `<button class="qm-option-btn" data-i="${i}">${String.fromCharCode(65 + i)}. ${opt}</button>`;
@@ -701,17 +710,14 @@ function showResults() {
 
 /* ── Ouverture / Fermeture ── */
 function openModal() {
-  const overlay = document.getElementById('quiz-modal-overlay');
-  overlay.classList.add('is-open');
-  document.body.style.overflow = 'hidden';
+  const dialog = document.getElementById('quiz-modal-overlay');
+  if (dialog.open) return;
+  dialog.showModal(); // page inerte, focus dans la boîte, Échap et retour du focus gérés par le navigateur
   if (window.lenis) window.lenis.stop();
 }
 
 function closeModal() {
-  const overlay = document.getElementById('quiz-modal-overlay');
-  overlay.classList.remove('is-open');
-  document.body.style.overflow = '';
-  if (window.lenis) window.lenis.start();
+  document.getElementById('quiz-modal-overlay').close();
 }
 
 function resetQuiz() {
@@ -741,13 +747,14 @@ export function initQuizModal(lang = 'fr') {
     }
   });
 
-  /* Fermeture */
+  /* Fermeture : bouton, clic sur le fond (la boîte occupe l'écran, le panneau est son enfant), Échap natif */
+  const dialog = document.getElementById('quiz-modal-overlay');
   document.getElementById('qm-close').addEventListener('click', closeModal);
-  document.getElementById('quiz-modal-overlay').addEventListener('click', e => {
-    if (e.target === e.currentTarget) closeModal();
+  dialog.addEventListener('click', e => {
+    if (e.target === dialog) closeModal();
   });
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeModal();
+  dialog.addEventListener('close', () => {
+    if (window.lenis) window.lenis.start();
   });
 
   /* Démarrage */

@@ -4,6 +4,9 @@
  */
 
 export function initLenis() {
+  // Mouvement réduit demandé : défilement natif, sans inertie
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return null;
+
   if (typeof Lenis === 'undefined') {
     console.warn('[STM] Lenis non disponible');
     return null;
