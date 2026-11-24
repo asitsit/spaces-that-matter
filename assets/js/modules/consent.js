@@ -15,7 +15,7 @@ const GA_COOKIE_SECONDS = 60 * 60 * 24 * 395;       // 13 mois, durée maximale 
 const TEXT = {
   fr: {
     label: 'Gestion des cookies',
-    message: 'Nous utilisons des cookies de mesure d\'audience (Google Analytics) pour comprendre comment le site est utilisé. Ils ne sont déposés qu\'avec votre accord.',
+    message: 'Nous utilisons des cookies de mesure d\'audience pour comprendre comment le site est utilisé. Ils ne sont déposés qu\'avec votre accord.',
     more: 'En savoir plus',
     refuse: 'Refuser',
     accept: 'Accepter',
