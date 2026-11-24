@@ -23,7 +23,7 @@ const TEXT = {
   },
   en: {
     label: 'Cookie settings',
-    message: 'We use audience measurement cookies (Google Analytics) to understand how the site is used. They are only set with your consent.',
+    message: 'We use audience measurement cookies to understand how the site is used. They are only set with your consent.',
     more: 'Learn more',
     refuse: 'Decline',
     accept: 'Accept',
