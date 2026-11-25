@@ -27,6 +27,7 @@ Points clés :
 
 ## Articles
 
+- [Webinaire du 8 décembre 2026 : un joli bureau peut-il être un mauvais espace de travail ?](https://spacesthatmatter.com/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html): webinaire en ligne de 12h00 à 12h45, inscription sur LinkedIn (https://www.linkedin.com/events/7528392145599160320/)
 - [Pourquoi l'espace de travail est un levier de performance humaine](https://spacesthatmatter.com/pages/blog/pourquoi-espace-travail-levier-performance.html): mécanismes neurologiques et psychologiques (bruit, lumière, densité, nature) et limites des enquêtes de satisfaction classiques
 - [Flex-office : promesse tenue ou désillusion collective ?](https://spacesthatmatter.com/pages/blog/flex-office-promesse-desillusion.html): ce que la recherche dit du flex-office et les leviers des entreprises qui le réussissent
 - [HQE, WELL, BREEAM vs STM](https://spacesthatmatter.com/pages/blog/hqe-well-breeam-vs-stm.html): différence entre certification environnementale du bâtiment et label de performance humaine
@@ -34,6 +35,7 @@ Points clés :
 
 ## English version
 
+- [Webinar, December 8, 2026: can a beautiful office be a bad workspace?](https://spacesthatmatter.com/en/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html)
 - [Home](https://spacesthatmatter.com/en/): the label, the 8 dimensions and the certification process
 - [About](https://spacesthatmatter.com/en/pages/about.html): who we are, the founding team and key facts about the label
 - [The label](https://spacesthatmatter.com/en/pages/label.html): origin, genesis with La Fabrique Spinoza, mission and vision
@@ -53,7 +55,7 @@ Points clés :
 ## Contact
 
 - Email : contact@spacesthatmatter.com
-- LinkedIn : https://www.linkedin.com/company/112358399/
+- LinkedIn : https://www.linkedin.com/company/spaces-that-matter/
 - Wikidata : https://www.wikidata.org/wiki/Q142196961
 - Flux RSS du blog : https://spacesthatmatter.com/feed.xml (anglais : https://spacesthatmatter.com/en/feed.xml)
 - Démonstration : https://cal.com/alexandre-sitbon/demo-spaces-that-matter

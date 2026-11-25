@@ -219,4 +219,25 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/about.html"/>
   </url>
 
+
+  <!-- Webinaire du 8 décembre 2026 -->
+  <url>
+    <loc>https://spacesthatmatter.com/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html"/>
+  </url>
+  <url>
+    <loc>https://spacesthatmatter.com/en/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://spacesthatmatter.com/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://spacesthatmatter.com/en/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://spacesthatmatter.com/pages/blog/webinaire-joli-bureau-mauvais-espace-de-travail.html"/>
+  </url>
+
 </urlset>
