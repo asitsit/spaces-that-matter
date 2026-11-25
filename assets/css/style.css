@@ -2146,8 +2146,7 @@ html { font-size-adjust: from-font; }
   background: none;
   border: 0;
   padding: 0;
-  font: inherit;
-  color: inherit;
+  font-family: inherit;
   cursor: pointer;
 }
 
@@ -2187,3 +2186,6 @@ html { font-size-adjust: from-font; }
   .consent-actions { width: 100%; }
   .consent-actions .btn { flex: 1; min-block-size: 2.25rem; }
 }
+
+/* Lien LinkedIn en icône */
+.footer-link--icon { display: inline-flex; align-items: center; min-inline-size: 24px; min-block-size: 24px; }

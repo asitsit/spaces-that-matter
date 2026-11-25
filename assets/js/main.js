@@ -41,6 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initAnchorScroll();
   setFooterYear();
   initQuizModal(lang);
+  prefillContactForm();
 
 });
 
@@ -77,4 +78,15 @@ function initAnchorScroll() {
 function setFooterYear() {
   const el = document.getElementById('footer-year');
   if (el) el.textContent = new Date().getFullYear();
+}
+
+/* Page contact : message prérempli selon le lien d'origine (ex. « Demander toutes les références » du blog) */
+function prefillContactForm() {
+  const message = document.getElementById('message');
+  if (!message || new URLSearchParams(location.search).get('demande') !== 'references') return;
+  if (!message.value) {
+    message.value = lang === 'en'
+      ? 'Hello, I would like to receive the full list of scientific references behind the Spaces That Matter framework.'
+      : 'Bonjour, je souhaite recevoir la liste complète des références scientifiques sur lesquelles repose le référentiel Spaces That Matter.';
+  }
 }
